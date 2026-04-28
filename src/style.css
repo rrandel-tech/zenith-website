@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+    /*  Dark Accents */
+    --color-dark-rosewater: oklch(0.92 0.02 30);
+    --color-dark-flamingo:  oklch(0.88 0.04 18);
+    --color-dark-pink:      oklch(0.87 0.08 336);
+    --color-dark-mauve:     oklch(0.79 0.12 305);
+    --color-dark-red:       oklch(0.76 0.13 3);
+    --color-dark-maroon:    oklch(0.78 0.09 9);
+    --color-dark-peach:     oklch(0.82 0.10 53);
+    --color-dark-yellow:    oklch(0.92 0.07 87);
+    --color-dark-green:     oklch(0.86 0.11 143);
+    --color-dark-teal:      oklch(0.86 0.08 183);
+    --color-dark-sky:       oklch(0.85 0.08 210);
+    --color-dark-sapphire:  oklch(0.79 0.10 229);
+    --color-dark-blue:      oklch(0.77 0.11 260);
+    --color-dark-lavender:  oklch(0.82 0.09 277);
+
+    /* Dark Neutrals */
+    --color-dark-text:      oklch(0.88 0.04 272);
+    --color-dark-subtext-1: oklch(0.82 0.04 273);
+    --color-dark-subtext-0: oklch(0.75 0.04 274);
+    --color-dark-overlay-2: oklch(0.69 0.04 275);
+    --color-dark-overlay-1: oklch(0.62 0.04 276);
+    --color-dark-overlay-0: oklch(0.55 0.03 277);
+    --color-dark-surface-2: oklch(0.48 0.03 279);
+    --color-dark-surface-1: oklch(0.40 0.03 280);
+    --color-dark-surface-0: oklch(0.32 0.03 282);
+    --color-dark-base:      oklch(0.24 0.03 284);
+    --color-dark-mantle:    oklch(0.22 0.03 284);
+    --color-dark-crust:     oklch(0.18 0.02 284);
+
+    /* Light Accents */
+    --color-light-rosewater: oklch(0.71 0.10 33);
+    --color-light-flamingo:  oklch(0.69 0.13 21);
+    --color-light-pink:      oklch(0.73 0.17 338);
+    --color-light-mauve:     oklch(0.55 0.25 297);
+    --color-light-red:       oklch(0.55 0.22 20);
+    --color-light-maroon:    oklch(0.63 0.20 20);
+    --color-light-peach:     oklch(0.69 0.20 42);
+    --color-light-yellow:    oklch(0.71 0.15 68);
+    --color-light-green:     oklch(0.63 0.18 140);
+    --color-light-teal:      oklch(0.60 0.10 201);
+    --color-light-sky:       oklch(0.68 0.14 235);
+    --color-light-sapphire:  oklch(0.65 0.11 213);
+    --color-light-blue:      oklch(0.56 0.23 262);
+    --color-light-lavender:  oklch(0.66 0.18 273);
+
+    /* Light Neutrals */
+    --color-light-text:      oklch(0.44 0.04 279);
+    --color-light-subtext-1: oklch(0.49 0.04 279);
+    --color-light-subtext-0: oklch(0.55 0.03 279);
+    --color-light-overlay-2: oklch(0.60 0.03 279);
+    --color-light-overlay-1: oklch(0.65 0.03 278);
+    --color-light-overlay-0: oklch(0.71 0.02 275);
+    --color-light-surface-2: oklch(0.76 0.02 273);
+    --color-light-surface-1: oklch(0.81 0.02 271);
+    --color-light-surface-0: oklch(0.86 0.01 268);
+    --color-light-base:      oklch(0.96 0.01 265);
+    --color-light-mantle:    oklch(0.93 0.01 265);
+    --color-light-crust:     oklch(0.91 0.01 265);
+}
+
+body {
+    @apply bg-light-base dark:bg-dark-base;
+}

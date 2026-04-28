@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      const match = document.cookie.match(/(?:^|; )theme=([^;]*)/)
+      const theme = match && decodeURIComponent(match[1]) === "light" ? "light" : "dark"
+      document.documentElement.setAttribute("data-theme", theme)
+    </script>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Zenith Engine</title>
+    <meta name="description" content="Zenith Engine - a modern game engine framework for building games and interactive applications." />
+    <meta name="theme-color" content="#000000" />
+
+    <meta property="og:title" content="Zenith Engine" />
+    <meta property="og:description" content="A modern game engine framework for building games and interactive applications." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zenithengine.dev" /> <!-- TODO -->
+    <meta property="og:image" content="https://zenithengine.dev/og-image.png" /> <!-- TODO -->
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Zenith" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..700&family=JetBrains+Mono:ital,wght@0,300..700;1,300..700&display=swap&font-display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
